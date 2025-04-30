@@ -1,0 +1,12 @@
+server:
+  address: "0.0.0.0:8080"
+
+database:
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "secret"
+  dbname: "postgres"
+  sslmode: "disable"
+
+jwtsecret: "CTFThing"

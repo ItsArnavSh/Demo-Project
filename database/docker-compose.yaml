@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: hospital_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: hospital
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker_data/postgres_data:/var/lib/postgresql/data
