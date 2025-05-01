@@ -24,8 +24,8 @@ migratedown:
 
 # SQLC code generation
 setup:
-	migrate -path db/migrations -database "$(DB_URL)" up
-    cd db && sqlc generate
+	migrate -path db/migrations -database $(DB_URL) up
+	cd db && sqlc generate
 
 test:
 	go test ./...
